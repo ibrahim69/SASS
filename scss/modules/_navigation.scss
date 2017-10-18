@@ -1,0 +1,186 @@
+/*================================================================
+  Navbar
+================================================================*/
+
+nav {
+  .container-fluid {
+    padding: 0 50px;
+  }
+}
+
+.navbar ul li a {
+
+  svg {
+    display: flex;
+    margin: 0 auto;
+    width: 35px;
+  }
+
+  span {
+    display: block;
+    margin-top: 5px;
+    font-size: 1.5rem;
+    font-family: $font-heading;
+    color: $color-backgrounds1;
+  }
+
+  &:hover span{
+    color: $yellow;
+  }
+
+  &:hover .icon {
+    fill: $yellow;
+  }
+
+}
+
+.navbar-header {
+
+    .navbar-brand img {
+      width: 130px;
+    }
+
+    .navbar-toggle {
+      .icon-bar {
+        background: $color-backgrounds1;
+      }
+
+      &:hover .icon-bar {
+        background: $soft-grey;
+      }
+    }
+}
+
+
+.navbar-nav {
+  li a {
+    padding: 45px 35px;
+  }
+}
+
+.navbar-default {
+  background: transparent;
+  border: 0;
+}
+
+.navbar-default.scrolled {
+  background: $soft-red;
+  border: 0;
+  transition: all 0.3s ease-in-out;
+
+  li a {
+    padding: 20px 35px;
+  }
+
+  .navbar-header .navbar-brand img {
+    position: relative;
+    margin-top: -17px;
+  }
+
+}
+
+/*================================================================
+  Footer
+================================================================*/
+
+
+.informations {
+  padding-top: 65px;
+  padding-bottom: 85px;
+  font-size: 2rem;
+  font-family: $font-text;
+  font-weight: 100;
+  background: $color-backgrounds3;
+  color: $color-backgrounds1;
+
+  img {
+    width: 25px;
+    margin-right: 10px;
+  }
+
+  .col-sm-6,
+  .col-md-12 {
+    padding: 0;
+  }
+
+  h2 {
+    margin-bottom: 20px;
+  }
+}
+
+.tothetop {
+  position: relative;
+  display: block;
+  width: 75px;
+  margin: 0 auto;
+  margin-top: -100px;
+  margin-bottom: 35px;
+
+  a {
+    &hover .textTothetop {
+      fill: $yellow;
+    }
+  }
+}
+
+.social {
+  float: left;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 20px 0;
+  background: $soft-black;
+  color: $white;
+
+  .socialNetwork ul {
+    float: left;
+    padding: 0;
+    margin: 0;
+
+    li {
+      display: inline;
+      list-style: none;
+
+      a {
+        font-size: 3.5rem;
+        color: $soft-red;
+
+        &:hover {
+          color: $yellow;
+        }
+      }
+    }
+  }
+
+  p {
+    font-size: 1.8rem;
+    font-family: $font-text;
+    font-weight: 300;
+    margin-top: 10px;
+    text-align: center;
+
+    span {
+      float: right;
+    }
+  }
+
+  .modal {
+    .modal-header h4 a {
+      font-family: $font-heading;
+      font-size: 3rem;
+      color: $soft-red;
+      text-decoration: none;
+    }
+
+    .modal-body a {
+      margin-bottom: 15px;
+      color: $soft-red;
+      text-decoration: none;
+
+      p {
+        text-align: left;
+      }
+    }
+  }
+
+}

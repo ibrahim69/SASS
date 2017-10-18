@@ -1,0 +1,44 @@
+html {
+  margin: 0 auto;
+  padding: 0;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: $font-heading;
+  display: inline;
+  margin-left: 10px;
+
+  span {
+    color: $span;
+  }
+}
+
+p {
+  font-family: $font-text;
+}
+
+.decoration li:nth-child(2) {
+    width: 13px;
+    height: 13px;
+    transform: rotate(45deg);
+    position: relative;
+    top: 2px;
+}
+
+.decoration li {
+    border : 1px solid #D91E18;
+    display : inline-block;
+    width : 10px;
+    height: 10px;
+    transform: rotate(45deg);
+    margin: 10px 1px;
+}
+
+.title,
+.judul {
+  img {
+    width: 40px;
+    height: 50px;
+    margin-top: -30px;
+  }
+}

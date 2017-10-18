@@ -1,0 +1,69 @@
+@mixin backImage($image,
+  $height: 100vh,
+  $bgPost: bottom center
+  ) {
+  background: url($image);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: $bgPost;
+  height: $height;
+}
+
+$transition:all 0.3s ease-in-out;
+
+@mixin animation {
+  transition: $transition;
+   -webkit-transition: $transition;
+     -moz-transition: $transition;
+}
+
+@mixin grid($qty, $margin) {
+  width: ((100% - (($qty - 1) * $margin))/$qty);
+  &:nth-child(n) {
+    margin: $margin;
+  }
+
+}
+
+$transform:scale(1.1) rotate(0deg) translate(0px);
+$transition: all 300ms ease-in-out 300ms;
+
+@mixin scale {
+  transform: $transform;
+    -webkit-transform: $transform;
+      -moz-transform: $transform;
+
+  transition: $transition;
+    -webkit-transition: $transition;
+      -moz-transition: $transition;
+}
+
+$transition: opacity 0.35s, transform 0.35s;
+$transform: scale(0, 1);
+
+@mixin traNsition {
+  transition: $transition;
+    -webkit-transition: $transition;
+      -moz-transition: $transition;
+
+  transition: $transform;
+    -webkit-transition: $transform;
+      -moz-transition: $transform;
+
+}
+
+$transform: scale(1);
+
+@mixin Transform {
+  transform: $transform;
+    -webkit-transform: $transform;
+      -moz-transform: $transform;
+}
+
+$transition: all 0.35s;
+
+@mixin Transition {
+  transition: $transition;
+    -webkit-transition: $transition;
+      -moz-transition: $transition;
+}

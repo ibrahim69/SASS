@@ -1,0 +1,39 @@
+/*#####################################################################
+  gallery
+#####################################################################*/
+
+#gallery {
+  padding: 80px 0 0;
+
+  .container-fluid {
+    padding: 0;
+    margin: 0 auto;
+    .title {
+      padding: 0 0 50px;
+      text-align: center;
+
+      img {
+        width: 35px;
+        height: 35px;
+        margin-top: -12px;
+      }
+    }
+  }
+}
+
+.gallery {
+    img {
+      float: left;
+      max-width: 422px;
+      width: 100%;
+      @include grid(3, 1%);
+    }
+}
+
+.hovereffect {
+  &:hover {
+    img {
+      @include scale;
+    }
+  }
+}
